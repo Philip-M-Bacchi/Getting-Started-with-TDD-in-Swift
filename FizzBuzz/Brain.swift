@@ -23,10 +23,7 @@ final class Brain {
     }
     
     func isDivisibleBy(_ divisor: Int, number: Int) -> Bool {
-        guard divisor != 0 else {
-            return false
-        }
-        return number % divisor == 0
+        return number.isMultiple(of: divisor)
     }
     
     func check(_ number: Int) -> Move {
